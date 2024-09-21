@@ -1,0 +1,9 @@
+# Hussain if you add any packages keep in mind to specify the version :)
+
+discord.py-self==2.0.0  # For interacting with Discord's API using self-bots.
+termcolor==2.4.0        # Enables colored terminal text for enhanced CLI output.
+python-dotenv==1.0.1    # Simplifies management of environment variables via .env files.
+
+upstart==0.3.4 # Monitoring service like DAEMON but i like this one better :)
+pyfiglet==1.0.2 # Add ASCII to console easily
+colorama==0.4.6 # Makes ANSI escape character sequences (for producing colored terminal text and cursor positioning) work under MS Windows.

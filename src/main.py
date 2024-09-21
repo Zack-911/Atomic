@@ -2,12 +2,7 @@ import discord
 from termcolor import colored
 import pyfiglet
 from colorama import init, Fore, Style
-from dotenv import load_dotenv
 import os
-
-# Initialize environment variables from .env file
-load_dotenv()
-TOKEN = os.getenv('TOKEN')
 
 # Initialize Colorama
 init()

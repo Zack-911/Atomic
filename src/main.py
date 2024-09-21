@@ -26,4 +26,4 @@ class MyClient(discord.Client):
         print(f'Message from {message.author}: {message.content}')
 
 client = MyClient()
-client.run('TOKEN')
+client.run('')

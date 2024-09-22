@@ -2,11 +2,10 @@
 [![Version française](https://img.shields.io/badge/Lire%20en-Fran%C3%A7ais-blue?style=for-the-badge&logo=appveyor)](https://github.com/Zack-911/SelfBotX/blob/main/README-fr.md)
 
 
-# 🌌 SelfBotX
+# 🌌 Atomic
 ### A powerful Discord Selfbot crafted in Python using [discord.py-self](https://github.com/dolfies/discord.py-self)!
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/72bbd0f7-5de7-4479-b57d-5c696c9b36d3" alt="icon" width="50%" height="50%">
 
   [![GitHub release (latest by date)](https://img.shields.io/github/v/release/Sitois/Nuclear-V2.svg?style=flat)](https://github.com/Zack-911/SelfBotX/releases)
   [![GitHub downloads](https://img.shields.io/github/downloads/Sitois/Nuclear-V2/total.svg?style=flat)](https://github.com/Zack-911/SelfBotX/releases)

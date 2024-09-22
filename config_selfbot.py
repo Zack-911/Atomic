@@ -15,7 +15,7 @@ token = ""
 
 # en: Commands prefix.
 # fr: Prefix des commandes.
-prefix = "&"
+prefix = ">"
 
 # fr: Langue.
 # en: Language.

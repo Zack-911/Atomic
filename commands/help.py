@@ -160,7 +160,7 @@ class HelpCommands(commands.Cog):
     `{config_selfbot.prefix}use omori`: {langs.template_help_omori[config_selfbot.lang]}
     `{config_selfbot.prefix}use youtube`: {langs.template_help_youtube[config_selfbot.lang]}
     `{config_selfbot.prefix}use car`: {langs.template_help_car[config_selfbot.lang]}
-    `{config_selfbot.prefix}use nuclear`: {langs.template_help_self[config_selfbot.lang]}
+    `{config_selfbot.prefix}use Atomic`: {langs.template_help_self[config_selfbot.lang]}
     `{config_selfbot.prefix}use dark`: {langs.template_help_dark[config_selfbot.lang]}
     `{config_selfbot.prefix}use python`: {langs.template_help_python[config_selfbot.lang]}
     `{config_selfbot.prefix}use js`: {langs.template_help_js[config_selfbot.lang]}

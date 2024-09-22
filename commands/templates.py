@@ -201,15 +201,15 @@ class TemplatesCommands(commands.Cog):
             await ctx.message.edit("📱 Template \"WebDeck\".")
             await asyncio.sleep(config_selfbot.deltime)
             await ctx.message.delete()
-        elif choice.lower() == "nuclear":
-            assets = {"large_image": self.templates_assets["nuclear"]["large_image"],
+        elif choice.lower() == "Atomic":
+            assets = {"large_image": self.templates_assets["Atomic"]["large_image"],
                       "large_text": "github.com/Sitois/Nuclear-V2",
-                      "small_image": self.templates_assets["nuclear"]["small_image"],
+                      "small_image": self.templates_assets["Atomic"]["small_image"],
                       "small_text": "On GitHub!"
                       }
             activity = discord.Activity(type=discord.ActivityType.streaming,
-                                        name="Nuclear",
-                                        details="Nuclear $B",
+                                        name="Atomic",
+                                        details="Atomic $B",
                                         state="Best free open-source $B!",
                                         assets=assets,
                                         url=config_selfbot.streaming_url,
@@ -221,7 +221,7 @@ class TemplatesCommands(commands.Cog):
                                     afk=True,
                                     idle_since=datetime.datetime(today_date.year, today_date.month, today_date.day))
 
-            await ctx.message.edit("🌌 Template \"Nuclear\".")
+            await ctx.message.edit("🌌 Template \"Atomic\".")
             await asyncio.sleep(config_selfbot.deltime)
             await ctx.message.delete()
         elif choice.lower() == "dark":

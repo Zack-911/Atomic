@@ -1,8 +1,6 @@
-Here’s a polished version of your README, with the contributors replaced by a placeholder for you to edit later:
-
 ---
-
 [![Version française](https://img.shields.io/badge/Lire%20en-Fran%C3%A7ais-blue?style=for-the-badge&logo=appveyor)](https://github.com/Zack-911/SelfBotX/blob/main/README-fr.md)
+
 
 # 🌌 SelfBotX
 ### A powerful Discord Selfbot crafted in Python using [discord.py-self](https://github.com/dolfies/discord.py-self)!
@@ -15,7 +13,6 @@ Here’s a polished version of your README, with the contributors replaced by a 
   [![GitHub stars](https://img.shields.io/github/stars/Sitois/Nuclear-V2.svg?style=flat)](https://github.com/Zack-911/SelfBotX/stargazers)
   [![GitHub watchers](https://img.shields.io/github/watchers/Sitois/Nuclear.svg?style=flat)](https://github.com/Zack-911/SelfBotX/watchers)
   [![GitHub issues](https://img.shields.io/github/issues/Sitois/Nuclear-V2.svg?style=flat)](https://github.com/Zack-911/SelfBotX/issues)
-  [![Support](image.png)](https://discord.gg/gFrFx8T6qX)
 </div>
 
 
@@ -86,12 +83,9 @@ Edit `config_selfbot.py` using any text editor and input your [user token](https
 
 ## 👀 Preview
 <div align="center">
-  <img src="https://i.imgur.com/aMiocj8.png" alt="preview" width="">
+  <img src="https://github.com/user-attachments/assets/0ebb7a06-948f-4e7d-aa3c-1cfa78ce525a" alt="preview" width="">
 </div>
 <br>
-<div align="center">
-  <img src="https://i.imgur.com/FP6kCj6.png" alt="preview_second" width="">
-</div>
 
 ## ☣️ Issues
 Currently, there are no known issues. If you encounter any, please visit our [Support](https://github.com/Zack-911/SelfBotX?tab=readme-ov-file#support)!

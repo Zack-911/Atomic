@@ -17,9 +17,9 @@ try:
 except ImportError:
     import sys, os
     if os.name == 'nt':
-     subprocess.check_call([sys.executable, "-m", "pip", "install", '-r' , 'requirements.txt'])
+        subprocess.check_call([sys.executable, "-m", "pip", "install", '-r' , 'requirements.txt'])
     else:
-     subprocess.check_call([sys.executable, "-m", "pip", "install", '-r' , 'requirements.txt'])
+        subprocess.check_call([sys.executable, "-m", "pip", "install", '-r' , 'requirements.txt'])
     import platform
     import ctypes
     import datetime, time
@@ -37,7 +37,7 @@ except ImportError:
 
 os.system('cls' if os.name == 'nt' else 'clear')
 
-nuclear_version = "v1.7"
+Atomic_version = "v1.00"
 
 print(fr"""{Fore.LIGHTCYAN_EX}
 ███████╗███████╗██╗     ███████╗██████╗  ██████╗ ████████╗██╗  ██╗
@@ -46,8 +46,7 @@ print(fr"""{Fore.LIGHTCYAN_EX}
 ╚════██║██╔══╝  ██║     ██╔══╝  ██╔══██╗██║   ██║   ██║    ██╔██╗ 
 ███████║███████╗███████╗██║     ██████╔╝╚██████╔╝   ██║   ██╔╝ ██╗
 ╚══════╝╚══════╝╚══════╝╚═╝     ╚═════╝  ╚═════╝    ╚═╝   ╚═╝  ╚═╝
-                                                                   v{nuclear_version}{Style.RESET_ALL}""")
-
+                                                                   v{Atomic_version}{Style.RESET_ALL}""")
 
 def set_terminal_title(title):
     system = platform.system()
@@ -60,26 +59,24 @@ def set_terminal_title(title):
         sys.stdout.flush()
 
 try:
-   set_terminal_title("| Nuclear-V2 Selfbot |")
+    set_terminal_title("| Atomic |")
 except Exception as e:
-   print(f"Error while trying to change the terminal name: {e}")
-
+    print(f"Error while trying to change the terminal name: {e}")
 
 if config_selfbot.token == "":
-   config_selfbot.token = input("Token: ")
+    config_selfbot.token = input("Token: ")
 
 if config_selfbot.lang == "":
-   print("""Language Choice / Choix de la langue:
+    print("""Language Choice / Choix de la langue:
 fr: Français
 en: English""")
-   config_selfbot.lang = input("fr / en: ")
+    config_selfbot.lang = input("fr / en: ")
 
 if config_selfbot.prefix == "":
-   config_selfbot.prefix = input("Prefix: ")
+    config_selfbot.prefix = input("Prefix: ")
 
 if config_selfbot.selfbot_name == "":
-   config_selfbot.selfbot_name = input("Selfbot name: ")
-
+    config_selfbot.selfbot_name = input("Selfbot name: ")
 
 def check_latest_version(repo_owner, repo_name):
     url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/releases/latest"
@@ -93,15 +90,15 @@ def check_latest_version(repo_owner, repo_name):
         return None
 
 def call_check_repo():
-    global nuclear_version
-    repo_owner = "Sitois"
-    repo_name = "Nuclear-V2"
+    global Atomic_version
+    repo_owner = "Atomic-911"
+    repo_name = "Atomic"
     while True:
         latest_version = check_latest_version(repo_owner, repo_name)
         if latest_version:
-            if not latest_version == nuclear_version:
-                print(f"{Fore.BLUE}[INFO] {langs.error_check_version_one[config_selfbot.lang]} ({latest_version}) {langs.error_check_version_two[config_selfbot.lang]} https://github.com/Sitois/Nuclear/releases/tag/{latest_version}")
-                print(f"{langs.error_check_version_three[config_selfbot.lang]} {nuclear_version}{Style.RESET_ALL}")
+            if not latest_version == Atomic_version:
+                print(f"{Fore.BLUE}[INFO] {langs.error_check_version_one[config_selfbot.lang]} ({latest_version}) {langs.error_check_version_two[config_selfbot.lang]} https://github.com/Atomic-911/Atomic/releases/tag/{latest_version}")
+                print(f"{langs.error_check_version_three[config_selfbot.lang]} {Atomic_version}{Style.RESET_ALL}")
             time.sleep(3600)
 
 def run_in_background():
@@ -111,11 +108,9 @@ def run_in_background():
 try:
     run_in_background()
 except Exception as e:
-    print(f"Error while trying to check the last Nuclear version: {e}")
+    print(f"Error while trying to check the last Atomic version: {e}")
 
 print(f"{Fore.LIGHTYELLOW_EX}[#] {Fore.YELLOW}{langs.start_text[config_selfbot.lang]}{Style.RESET_ALL}")
-
-
 
 ####################
 #  start           #
@@ -124,10 +119,8 @@ print(f"{Fore.LIGHTYELLOW_EX}[#] {Fore.YELLOW}{langs.start_text[config_selfbot.l
 assets = config_selfbot.assets
 today_date = datetime.datetime.today()
 
-
 """
 API_KEY = 'YOUR_API_KEY'
-
 
 solver = twocaptcha.TwoCaptcha(API_KEY)
 
@@ -136,7 +129,7 @@ async def handle_captcha(exc: discord.CaptchaRequired, bot: commands.Bot) -> str
     return result['code']
 """
 
-bot = commands.Bot(command_prefix=config_selfbot.prefix, self_bot=True, help_command=None)#, captcha_handler=handle_captcha)
+bot = commands.Bot(command_prefix=config_selfbot.prefix, self_bot=True, help_command=None) #, captcha_handler=handle_captcha)
 
 start_time = time.time()
 
@@ -145,6 +138,18 @@ async def on_ready():
     global today_date
     global start_time
     print(f"{Fore.YELLOW}------------------{Style.RESET_ALL}")
+
+    os.system('cls' if os.name == 'nt' else 'clear')  # Clear the terminal
+
+    print(fr"""{Fore.LIGHTCYAN_EX}
+    ███████╗███████╗██╗     ███████╗██████╗  ██████╗ ████████╗██╗  ██╗
+    ██╔════╝██╔════╝██║     ██╔════╝██╔══██╗██╔═══██╗╚══██╔══╝╚██╗██╔╝
+    ███████╗█████╗  ██║     █████╗  ██████╔╝██║   ██║   ██║    ╚███╔╝ 
+    ╚════██║██╔══╝  ██║     ██╔══╝  ██╔══██╗██║   ██║   ██║    ██╔██╗ 
+    ███████║███████╗███████╗██║     ██████╔╝╚██████╔╝   ██║   ██╔╝ ██╗
+    ╚══════╝╚══════╝╚══════╝╚═╝     ╚═════╝  ╚═════╝    ╚═╝   ╚═╝  ╚═╝
+                                                                   v{Atomic_version}{Style.RESET_ALL}""")
+    
 
     # Cogs !!
     try:
@@ -195,26 +200,28 @@ async def on_ready():
 
     print(f"{Fore.RED}[!] {Fore.LIGHTRED_EX}{langs.ready_text[config_selfbot.lang]} @{bot.user.name} ({bot.user.id}), {langs.ready_text_two[config_selfbot.lang]} {round(time.time()) - round(start_time)} {langs.ready_text_three[config_selfbot.lang]}", Style.RESET_ALL)
     print(f"{Fore.MAGENTA}------------------{Style.RESET_ALL}")
-    
-    assets = {"large_image": config_selfbot.assets["large_image"] if rpc.read_variable_json("large_image") == "VOID" else rpc.read_variable_json("large_image"),
-              "large_text": config_selfbot.assets["large_text"] if rpc.read_variable_json("large_text") == "VOID" else rpc.read_variable_json("large_text"),
-              "small_image": config_selfbot.assets["small_image"] if rpc.read_variable_json("small_image") == "VOID" else rpc.read_variable_json("small_image"),
-              "small_text": config_selfbot.assets["small_text"] if rpc.read_variable_json("small_text") == "VOID" else rpc.read_variable_json("small_text")
-             }
+
+    # Your code for setting assets and activity...
+    assets = {
+        "large_image": config_selfbot.assets["large_image"] if rpc.read_variable_json("large_image") == "VOID" else rpc.read_variable_json("large_image"),
+        "large_text": config_selfbot.assets["large_text"] if rpc.read_variable_json("large_text") == "VOID" else rpc.read_variable_json("large_text"),
+        "small_image": config_selfbot.assets["small_image"] if rpc.read_variable_json("small_image") == "VOID" else rpc.read_variable_json("small_image"),
+        "small_text": config_selfbot.assets["small_text"] if rpc.read_variable_json("small_text") == "VOID" else rpc.read_variable_json("small_text")
+    }
     activity = discord.Activity(type=discord.ActivityType.playing,
-                                    name=config_selfbot.activity_name if rpc.read_variable_json("activity_name") == "VOID" else rpc.read_variable_json("activity_name"),
-                                    details=config_selfbot.activity_details if rpc.read_variable_json("activity_details") == "VOID" else rpc.read_variable_json("activity_details"),
-                                    state=config_selfbot.activity_state if rpc.read_variable_json("activity_state") == "VOID" else rpc.read_variable_json("activity_state"),
-                                    timestamps={"start": time.time()},
-                                    assets=assets,
-                                    application_id=config_selfbot.application_id,
-                                    buttons=[config_selfbot.activity_button_one if rpc.read_variable_json("activity_button_one") == "VOID" else rpc.read_variable_json("activity_button_one"), config_selfbot.activity_button_two if rpc.read_variable_json("activity_button_two") == "VOID" else rpc.read_variable_json("activity_button_two")])
-            
+                                 name=config_selfbot.activity_name if rpc.read_variable_json("activity_name") == "VOID" else rpc.read_variable_json("activity_name"),
+                                 details=config_selfbot.activity_details if rpc.read_variable_json("activity_details") == "VOID" else rpc.read_variable_json("activity_details"),
+                                 state=config_selfbot.activity_state if rpc.read_variable_json("activity_state") == "VOID" else rpc.read_variable_json("activity_state"),
+                                 timestamps={"start": time.time()},
+                                 assets=assets,
+                                 application_id=config_selfbot.application_id,
+                                 buttons=[config_selfbot.activity_button_one if rpc.read_variable_json("activity_button_one") == "VOID" else rpc.read_variable_json("activity_button_one"),
+                                          config_selfbot.activity_button_two if rpc.read_variable_json("activity_button_two") == "VOID" else rpc.read_variable_json("activity_button_two")])
+    
     await bot.change_presence(status=discord.Status.idle,
                               activity=activity,
                               afk=True,
                               idle_since=datetime.datetime(today_date.year, today_date.month, today_date.day))
-
 
 def restart_selfbot():
     python = sys.executable
@@ -235,17 +242,13 @@ async def stop(ctx):
     await bot.close()
     exit()
 
-
 #############
 #############
-
 
 ####################
 # start the        #
 #      selfbot !!  #
 ####################
-
-
 
 def fix_aiohttp():
     """

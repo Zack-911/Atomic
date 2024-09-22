@@ -11,8 +11,8 @@ token_error = {
 }
 
 aihottp_error = {
-    "fr": "Ancienne version d'aiohttp (cette erreur ne vient pas de Nuclear ^^). Cette erreur vient de discord.py==1.7.3, Tentaive de fix (le selfbot va redémarrer!)...\nAppuyez sur Entrer.",
-    "en": "Old aiohttp error (not Nuclear's fault ^^). This comes from discord.py==1.7.3, trying to fix it (it will restart!)...\nPress Enter."
+    "fr": "Ancienne version d'aiohttp (cette erreur ne vient pas de Atomic ^^). Cette erreur vient de discord.py==1.7.3, Tentaive de fix (le selfbot va redémarrer!)...\nAppuyez sur Entrer.",
+    "en": "Old aiohttp error (not Atomic's fault ^^). This comes from discord.py==1.7.3, trying to fix it (it will restart!)...\nPress Enter."
 }
 
 aihottp_success = {
@@ -616,8 +616,8 @@ template_help_car = {
 }
 
 template_help_self = {
-    "fr": "Utilise la template \"Nuclear\".",
-    "en": "Use \"Nuclear\" template."
+    "fr": "Utilise la template \"Atomic\".",
+    "en": "Use \"Atomic\" template."
 }
 
 template_help_webdeck = {

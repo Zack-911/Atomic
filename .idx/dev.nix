@@ -8,8 +8,6 @@
     pkgs.python311
     pkgs.python311Packages.pip
     pkgs.nano
-    pkgs.nodejs_latest
-    pkgs.npm-check-updates
   ];
 
   # Defines environment variables for your workspace—customize as necessary.

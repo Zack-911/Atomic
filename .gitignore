@@ -2,6 +2,3 @@ venv
 __pycache__
 Icon.jfif
 DO NOT OPEN HUSSAIN
-node_modules
-package-lock.json
-package.json

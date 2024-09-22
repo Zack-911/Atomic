@@ -7,7 +7,7 @@
   packages = [
     pkgs.python311
     pkgs.python311Packages.pip
-    pkgs.sudo                    # Add sudo to the development environment
+    pkgs.nano
   ];
 
   # Defines environment variables for your workspace—customize as necessary.

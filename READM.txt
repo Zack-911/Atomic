@@ -8,7 +8,7 @@ Here’s a polished version of your README, with the contributors replaced by a 
 ### A powerful Discord Selfbot crafted in Python using [discord.py-self](https://github.com/dolfies/discord.py-self)!
 
 <div align="center">
-  <img src="!(image-1.png)" alt="icon" width="50%" height="50%">
+  <img src="https://github.com/user-attachments/assets/72bbd0f7-5de7-4479-b57d-5c696c9b36d3" alt="icon" width="50%" height="50%">
 
   [![GitHub release (latest by date)](https://img.shields.io/github/v/release/Sitois/Nuclear-V2.svg?style=flat)](https://github.com/Zack-911/SelfBotX/releases)
   [![GitHub downloads](https://img.shields.io/github/downloads/Sitois/Nuclear-V2/total.svg?style=flat)](https://github.com/Zack-911/SelfBotX/releases)
@@ -17,6 +17,7 @@ Here’s a polished version of your README, with the contributors replaced by a 
   [![GitHub issues](https://img.shields.io/github/issues/Sitois/Nuclear-V2.svg?style=flat)](https://github.com/Zack-911/SelfBotX/issues)
   [![Support](image.png)](https://discord.gg/gFrFx8T6qX)
 </div>
+
 
 ## ⛔ Disclaimer
 **Please note that Discord SelfBots are against Discord's Terms of Service and may result in account bans. Use this software at your own risk for educational purposes only.**
